@@ -1,0 +1,32 @@
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+.rollOut {
+  animation-name: rollOut;
+}
+</style>
+</head>
+<body>
+
+<div class="rollOut"></div>
+
+</body>
+</html>

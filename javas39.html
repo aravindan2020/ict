@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+<style>
+	#box1{
+		background:#E599F3;
+		width:400px;
+		height:200px;
+	}
+	
+</style>
+<script>
+	function slideopen(el)
+	{
+		var e=document.getElementById(el)
+		e.style.transition="height 1.0s ease-in 2s"
+		e.style.height="200px";
+		
+	}
+function slideclosed(el)
+	{
+		var e=document.getElementById(el)
+		e.style.transition="height 1.0s linear 2s"
+		e.style.height="0px"
+		
+	}
+</script>	
+</head>
+
+<body>
+<button onclick="slideopen('box1')">slideopen</button>
+<button onclick="slideclosed('box1')">slideclosed</button>
+<div id="box1">content</div>	
+</body>
+</html>

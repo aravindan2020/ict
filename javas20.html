@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<title>Untitled Document</title>
+	<script>
+		function f1()
+		{
+			var rd1=document.getElementById("r1")
+			var rd2=document.getElementById("r2")
+			var rd3=document.getElementById("r3")
+			if(rd1.checked==true)
+				{
+					alert("you select the choice")
+				}
+			else if(rd2.checked==true)
+				{
+					alert("you select the choice1")
+				}
+			else if(rd3.checked==true)
+				{
+					alert("you select the choice2")
+				}
+			else
+				{
+					alert("nothing is selected<textarea></textarea>")
+				}
+			
+		}
+	</script>
+		
+</head>
+
+<body>
+	<input id="r1" type="radio" name="g1"value="enter">
+choice
+	</input>
+	<br>
+<input id="r2" type="radio"name="g1" value="enter">choice1
+	</input>
+<br>
+<input id="r3" type="radio" name="g1" value="enter">choice2</input>
+<br>
+<button onclick="f1()">click me</button>
+</body>
+</html>
